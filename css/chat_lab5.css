@@ -1,0 +1,36 @@
+#chat_user {
+    background-color: white;
+    display: block;
+    margin-top: -15px;
+}
+
+#chat_messages {
+    background-color: white;
+    display: block; /* sau flex */
+    height: 225px;
+    border: solid 2px gray;
+    overflow-y: auto; /* pentru a permite derularea în cazul în care mesajele depășesc înălțimea */
+}
+
+#form_chat {
+    background: white;
+    display: block; /* sau flex */
+    height: 50px;
+    width: 95%;
+    padding: 0 10px;
+    margin-bottom: 10px; /* ajustează marginul pentru a separa de chat_messages */
+}
+
+
+#sendMessageButton {
+    max-width: 60px;
+    margin-left: 4px;
+    margin-bottom: -20px;
+    height: 31px;
+    background-color: rgba(171, 171, 171, 0.814);
+} 
+
+#message {
+    border: solid 2px gray;
+    margin-bottom: -20px;
+}

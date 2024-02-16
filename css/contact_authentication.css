@@ -1,0 +1,58 @@
+#chat {
+    position: fixed;
+    top: 100px;
+    left: 0px;
+    height: 60px;
+    width: 40px;
+    background-color: none;
+    overflow: hidden;
+}
+
+#chat h2 {
+    background-color: #DEB887;
+    color: #800000;
+    padding: 10px 5px;
+    border-radius: 5px;
+}
+
+#login_form {
+    background-color: #619E9F;
+    padding: 15px 15px 25px 15px;
+    margin-top: -15px;
+    color: white;
+    border-radius: 5px;
+}
+
+#chat img {
+    width: 30px;
+    height: 30px;
+}
+
+#login_form button {
+    background-color: #C9C9C9;
+    color: black;
+    margin-left: -2px;
+}
+
+.error {
+    color: #800000;
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    margin-top: -10px;
+    align-content: center;
+    width: 300px;
+    height: 30px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+input:focus {
+    background-color: white;
+}
+
+.fa-times {
+    margin-left: 80px;
+}

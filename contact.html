@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CalaTour</title>
+        <link rel="stylesheet" href="css/default_styled.css" type="text/css"/>
+        <link rel="stylesheet" href="css/contact_styled.css" type="text/css"/>
+        <link rel="stylesheet" href="css/contact_styled_lab3.css" type="text/css"/>
+        <link rel="stylesheet" href="css/contact_authentication.css" type="text/css">
+        <link rel="stylesheet" href="css/chat_lab5.css" type="text/css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" crossorigin="anonymous">
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="js/authentication.js"></script>
+        <script src="js/chat.js"></script>
+    </head>
+    <body>
+        <div>
+            <h1>
+                <strong>CalaTour</strong> - <em>your travel agency</em>
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Cruises</a></li>
+                    <li><a href="#">Hiking</a></li>
+                    <li><a href="#">Swimming</a></li>
+                    <li><a href="#">Special offers</a></li>
+                    <li><a href="contact.html" class="defaultItem">Contact</a></li>
+                </ul>
+            </nav>
+
+            <img src="images/caribbean.jpg" />
+
+            <h2>CONTACT</h2>
+
+            <section>
+                <div class="contactClass">
+                    
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the 
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type 
+                        and scrambled it to make a type specimen book. It has survived not only five centuries, but also 
+                        the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 
+                        1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with 
+                        desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+
+                <div class="formClass">
+                    <form>
+                        <div class="successDisplay hidden" id="successMessage">
+                            Datele introduse sunt corecte
+                        </div>
+                        <div class="errorDisplay hidden" id="errorMessage">
+                            Datele introduse in urmatoarele campuri sunt invalide:
+                            <ul id="errors"></ul>
+                        </div>
+                        <label for="lastNameInput">Numele</label>
+                        <input id="lastNameInput" type="text"></input>
+                        <label for="firstNameInput">Prenumele</label>
+                        <input id="firstNameInput" type="text"></input>
+                        <label for="addressInput">Adresa</label>
+                        <input id ="addressInput" type="text"></input>
+                        <label for="birthdayInput">Data nasterii</label>
+                        <input id="birthdayInput" type="text"></input>
+                        <label for="phoneNumberInput">Telefon</label>
+                        <input id="phoneNumberInput" type="text"></input>
+                        <label for="emailInput">Emails</label>
+                        <input id="emailInput" type="text"></input>
+                        
+                        <div>
+                            <label>Culoarea favorita</label>
+                            <input type="color"></input>
+                        </div>
+
+                        <div>
+                            <button id="submit-button">Trimite</button>
+                            <button id="reset-button">Reseteaza</button>
+                        </div>
+                    </form>
+                </div>
+            </section>    
+
+           
+            <h2>LAST MINUTE</h2>
+
+            <ul>
+                <li>
+                    <h3>Crete - 5 days</h3>
+                    <img src="images/crete.jpg" />
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+                        a galley of type and scrambled it to make a type specimen book.</p>
+                </li>
+                <li>
+                    <h3>Barcelona</h3>
+                    <img src="images/barcelona.jpg" />
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+                        a galley of type and scrambled it to make a type specimen book.</p>
+                </li>
+                <li>
+                    <h3>Montenegro</h3>
+                    <img src="images/montenegro.jpg" />
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has 
+                        been the industry's standard dummy text ever since the 1500s, when an unknown printer took 
+                        a galley of type and scrambled it to make a type specimen book.</p>
+                </li>
+            </ul>
+
+            <footer>
+                &copy; 2014 <a href="">Computer Graphics and Interactive Systems</a>
+            </footer>
+        </div>
+
+        <div id="chat">
+            <h2>
+                <i class="fas fa-comments"></i>
+                Chat with us!
+                <i class="fas fa-times"></i>
+            </h2>
+
+            <form id="login_form">
+                <p id="instructions">
+                    <i class="fas fa-lock"></i> 
+                    Authentication required
+                </p>
+        
+                <input type="text" id="username" placeholder="username" />
+                <input type="password" id="password" placeholder="password" />
+                <button type="submit">Authenticate</button>
+                
+            </form>
+
+            <div id="chat_user">
+
+            </div>
+
+            <div id="chat_messages">
+
+            </div> 
+
+            <form id="form_chat">
+                <input type="text" id="message" placeholder="Type Message" />
+                <input type="submit" id="sendMessageButton" value="Send" />
+            </form>
+
+            <div class="loader">
+                <img src="animations/loading.gif" />
+                Processing...
+            </div>
+        </div>
+
+        <script src="js/script.js"></script>
+    </body>
+</html>

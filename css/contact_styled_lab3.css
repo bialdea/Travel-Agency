@@ -1,0 +1,25 @@
+.wrong {
+    background-color: orange;
+}
+
+.successDisplay {
+    justify-content: center;
+    color: white;
+}
+
+.errorDisplay {
+    display: flex;
+    flex-direction: column;
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+section div form div ul {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    list-style: initial;
+}

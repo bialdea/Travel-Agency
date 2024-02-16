@@ -1,0 +1,71 @@
+section {
+    display: inline-block;
+}
+
+.contactClass {
+    float: left;
+    width: 45%;
+}
+
+.formClass {
+    width: 45%;
+    float: right;
+    display: block;
+    background: #619E9F;
+    border-radius: 5px;
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 20px;
+    height: 25px;
+    color: white;
+}
+
+form input {
+    margin-bottom: 10px;
+    width: 70%;
+    color: gray;
+    border: none;
+    border-radius: 5px;
+    height: 25px;
+}
+
+input:focus {
+    background-color: yellow;
+    outline: none;
+    color: black;
+}
+
+section div p {
+    margin-top: 0px;
+}
+
+div form div {
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    padding: 15px 0;
+}
+
+div form div * {
+    width: 50%;
+    margin: 10px;
+}
+
+button {
+    border-radius: 5px;
+    border: none;
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+    font-size: 17px;
+    color: gray;
+    outline: none;
+}
+
+button:hover {
+    color: red;
+}
